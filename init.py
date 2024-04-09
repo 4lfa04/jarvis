@@ -22,8 +22,8 @@ def arranque():
     message = bot.send_message(users["id"], "Iniciando Sistemas")
     time.sleep(3)
     
-    message = bot.edit_message_text("Sistemas en línea", message.chat.id)
-    bot.edit_message_text("🤖", message.chat.id)
+    message = bot.edit_message_text("Sistemas en línea", users['id'], message.id)
+    bot.edit_message_text("🤖", users['id'], message.id)
     
 
 
