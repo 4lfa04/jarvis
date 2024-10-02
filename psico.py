@@ -56,9 +56,9 @@ def getToday():
         sueños = json.load(file)
     texto = "<b>📓 Historial de Episodios de Hoy</b>\n"
     for sueño in sueños['lista']:
-        print(f'Fecha: {sueño['fecha']} : {fecha == sueño['fecha']}')
-        if sueño['fecha'] == fecha:
-            texto+=f'{sueño['fecha']} / {sueño['hora']}: {sueño['info']}\n'
+        print(f'Fecha: {sueño["fecha"]} : {fecha == sueño["fecha"]}')
+        if sueño["fecha"] == fecha:
+            texto+=f'{sueño["fecha"]} / {sueño["hora"]}: {sueño["info"]}\n'
     return texto
 
 def handleOperation(message):
