@@ -5,7 +5,6 @@ TOKEN = '6954388294:AAE25G81cYl1FuYr8U2wrDB4r_yOeskLaN4'
 bot = telebot.TeleBot(TOKEN)
 
 def search(search):
-
     try:
         wikipedia.set_lang("es")
 
