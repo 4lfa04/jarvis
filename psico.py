@@ -45,7 +45,7 @@ def getSleep():
         sueños = json.load(file)
     texto = "<b>📓 Historial de Episodios</b>\n"
     for sueño in sueños['lista']:
-        texto+=f'{sueño['fecha']} / {sueño['hora']}: {sueño['info']}\n'
+        texto+=f'{sueño["fecha"]} / {sueño["hora"]}: {sueño["info"]}\n'
     
     return texto
 
