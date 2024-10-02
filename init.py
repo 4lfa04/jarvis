@@ -1,6 +1,6 @@
 import telebot, json, time
 import wikiSearch as wiki
-import .psico
+from . import psico
 
 
 buttons = []
