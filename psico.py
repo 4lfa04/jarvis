@@ -22,7 +22,6 @@ def saveSleep(data):
         json.dump(original, file)
 
 def saveNow(data):
-    data = "Comiendo Pizza"
     with open("db/psicoDb.json") as file:
         original = json.load(file)
     with open("db/psicoDb.json", "w") as file:
